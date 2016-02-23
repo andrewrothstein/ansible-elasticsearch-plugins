@@ -1,11 +1,11 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: elasticsearch role
+  description: elasticsearch-plugins role
   company: BlackRock
   license:
     - MIT
-  min_ansible_version: 2.0
+  min_ansible_version: 1.2
   platforms:
     - name: EL
       versions:
@@ -23,5 +23,5 @@ galaxy_info:
     - development
 
 dependencies:
-  - andrewrothstein.java
+  - andrewrothstein.elasticsearch
   

@@ -1,13 +1,8 @@
 ---
-# defaults file for elasticsearch
-elasticsearch_ver : '2.2.0'
-elasticsearch_mirror : 'https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution'
-
-#elasticsearch_cluster_name : 'my-application'
-#elasticsearch_node_rack : 'r1'
-
-# Set a custom port for HTTP:
-#elasticsearch_network_port : 9200
-elasticsearch_network_interface: eth0
-
-
+elasticsearch_plugin_bin: /usr/share/elasticsearch_bin/plugin
+elasticsearch_plugin_dir: /usr/share/elasticsearch/plugins
+elasticsearch_plugins:
+  - plugin: cloud-aws
+    creates: cloud-aws
+  - plugin: mobz/elasticsearch-head
+    creates: head
