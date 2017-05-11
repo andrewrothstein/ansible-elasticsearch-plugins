@@ -1,7 +1,8 @@
 ---
 - name: install plugins
   with_items: '{{elasticsearch_plugins | default([])}}'
-  shell: '{{elasticsearch_plugin_esdir}}/bin/plugin $JAVA_OPTS install {{item.plugin}}'
+  shell: >-
+    {{elasticsearch_plugin_esdir}}/bin/elasticsearch-plugin $JAVA_OPTS install {{item.plugin}}
   args:
     creates: '{{elasticsearch_plugin_esdir}}/plugins/{{item.creates}}'
     
