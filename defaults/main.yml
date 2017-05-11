@@ -1,8 +1,8 @@
 ---
-elasticsearch_plugin_bin: /usr/share/elasticsearch_bin/plugin
-elasticsearch_plugin_dir: /usr/share/elasticsearch/plugins
-elasticsearch_plugins:
-  - plugin: cloud-aws
-    creates: cloud-aws
-  - plugin: mobz/elasticsearch-head
-    creates: head
+elasticsearch_plugin_esdir: /usr/local/elasticsearch
+
+#elasticsearch_plugins:
+#  - plugin: cloud-aws
+#    creates: cloud-aws
+#  - plugin: mobz/elasticsearch-head
+#    creates: head

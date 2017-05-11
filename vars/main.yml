@@ -1,3 +1,2 @@
 ---
 # vars file for elasticsearch-plugins
-java_opts : "{% if proxy_env is defined %}{% if proxy_env.http_proxy is defined %}-Dhttp.proxyHost={{http_proxy_hostname}} -Dhttp.proxyPort={{http_proxy_port}}{% endif %}{% if proxy_env.https_proxy is defined %} -Dhttps.proxyHost={{https_proxy_hostname}} -Dhttps.proxyPort={{https_proxy_port}}{% endif %}{% if proxy_env.no_proxy is defined %} -DnoProxyHosts={{proxy_env.no_proxy}}{% endif %}{% endif %}"

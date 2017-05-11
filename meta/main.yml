@@ -12,16 +12,16 @@ galaxy_info:
         - 7
     - name: Fedora
       versions:
-        - 21
-        - 22
         - 23
+        - 24
+        - 25
     - name: Ubuntu
       versions:
-        - trusty
-
+        - xenial
   galaxy_tags:
     - development
 
 dependencies:
-  - andrewrothstein.elasticsearch
+  - role: andrewrothstein.elasticsearch
+    version: v3.0.1
   
