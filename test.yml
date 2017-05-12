@@ -3,5 +3,6 @@
   roles:
     - role: '{{playbook_dir}}'
       elasticsearch_plugins:
-        - plugin: cloud-aws
-          creates: cloud-aws
+        - plugin: repository-s3
+        - plugin: repository-hdfs
+

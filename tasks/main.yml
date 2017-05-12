@@ -4,5 +4,5 @@
   shell: >-
     {{elasticsearch_plugin_esdir}}/bin/elasticsearch-plugin $JAVA_OPTS install {{item.plugin}}
   args:
-    creates: '{{elasticsearch_plugin_esdir}}/plugins/{{item.creates}}'
+    creates: '{{elasticsearch_plugin_esdir}}/plugins/{{item.creates|default(item.plugin)}}'
     
